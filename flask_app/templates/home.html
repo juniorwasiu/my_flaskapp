@@ -1,0 +1,19 @@
+{%extends 'layout.html' %}
+
+  {% block body%}
+<div id = "container">  
+	<center>  
+	   <h2>  welcome  </h2>
+	   
+			 <form action = "/add" method = "post"> 
+			 
+				 <input type = "text" name ="username" placeholder= "enter your name here" />
+				 <br />
+				 <input type= "submit" name ="submit" />
+				 
+			 </form>  
+			 
+			 <h3>{{message}}</h3>
+	</center>   
+</div>	   
+   {% endblock %}
