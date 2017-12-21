@@ -1,0 +1,80 @@
+<html>
+
+<head>
+         <title> gci- task - completed   </title>
+		 <style type = "text/css">
+		 
+body{            
+
+ background-color:grey;
+
+
+}
+input[type='text']{
+			   
+		width:40%;
+		text-align:center;
+		padding:6px;
+			         
+}
+			
+h1,input[type='submit']{
+			 
+	color:lightgrey;  
+	padding:5px;
+	width:10%;
+    margin:15px;
+				  
+			
+}
+						
+input[type='submit']:hover{
+
+   color:white;
+   padding:9px;
+}	
+h3{
+     border:1px solid lightgrey;
+	 width:30%;
+	 border-radius:25px;
+	 color: white;
+	 font-size:35px;
+    
+}
+h2{
+      color:white;
+	  font:15px;
+}
+#container{
+           margin-top:6%;
+}
+					
+											
+		 </style>
+</head>
+
+<body>
+          {% block body %}
+
+
+<div id = "container">  
+	<center>  
+	   <h2>  welcome  </h2>
+	   
+			 <form action = "/add" method = "post"> 
+			 
+				 <input type = "text" name ="username" placeholder= "enter your name here" />
+				 <br />
+				 <input type= "submit" name ="submit" />
+				 
+			 </form>  
+			 
+			 <h3>{{message}}</h3>
+	</center>   
+</div>	   		  {% endblock %}
+
+</body>
+
+
+
+</html>
